@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-box">
+      <form action="">
+        <div >
+          <label for="gross-income">Enter gross annual income 
+            <span class="question-mark" data-tooltip="Enter gross annual income"></span>
+ </label>
+          <input type="number" id="gross-income" placeholder="Enter gross annual income"/>
+        </div>
+
+        <div>
+          <label for="extra-income">Enter extra income   
+            <span class="question-mark" data-tooltip="Enter extra income"></span>
+ </label>
+ <div class="input-wrapper">
+          <input type="number" id="extra-income" placeholder="Enter extra income" value="0"/>
+        </div>
+        </div>
+        
+
+        <div>
+            <label for="age_group">Enter age group
+              <span class="question-mark" data-tooltip="Enter age group"></span>
+
+            </label>
+            <select id="age_group" name="age_group" required>
+              <option value="">Select Age Group</option>
+              <option value="under_18">Under 40</option>
+              <option value="18_to_65">40 to 59</option>
+              <option value="over_65">60 and over</option>
+            </select>
+          </div>
+          
+
+        <div>
+          <label for="deductions">Enter total applicable deductions 
+            <span class="question-mark" data-tooltip="Enter total applicable deductions"></span>
+
+          <input type="number" id="deductions" value="0" placeholder="Enter total applicable deductions " />
+        </div>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">x</span>
+          <p>Modal content goes here.</p>
+          <button class="close2" id="close-button" type="submit" >Close</button>
+
+
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
